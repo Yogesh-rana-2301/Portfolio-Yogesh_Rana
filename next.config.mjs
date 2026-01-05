@@ -11,13 +11,11 @@ console.log(" Next.js Config:");
 console.log("  GITHUB_ACTIONS:", process.env.GITHUB_ACTIONS);
 console.log("  isGitHubPages:", isGitHubPages);
 console.log("  basePath:", basePath || "(none)");
-console.log("  assetPrefix:", basePath || "(none)");
 
 const nextConfig = {
   reactStrictMode: true,
   output: "export",
   basePath: basePath,
-  assetPrefix: basePath,
   trailingSlash: true,
   images: {
     unoptimized: true,

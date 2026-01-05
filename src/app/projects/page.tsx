@@ -30,7 +30,7 @@ const ALL_PROJECTS = [
         icon: <Icons.globe className="size-3" />,
       },
     ],
-    image: "chefsshell.png",
+    image: "/chefsshell.png",
     video: "",
   },
   {
@@ -48,7 +48,7 @@ const ALL_PROJECTS = [
         icon: <Icons.github className="size-3" />,
       },
     ],
-    image: "aws-ebs.png",
+    image: "/aws-ebs.png",
     video: "",
   },
   {
@@ -71,7 +71,7 @@ const ALL_PROJECTS = [
         icon: <Icons.globe className="size-3" />,
       },
     ],
-    image: "eventhive.png",
+    image: "/eventhive.png",
     video: "",
   },
   {
@@ -94,7 +94,7 @@ const ALL_PROJECTS = [
         icon: <Icons.globe className="size-3" />,
       },
     ],
-    image: "securecloudx.png",
+    image: "/securecloudx.png",
     video: "",
   },
 ];

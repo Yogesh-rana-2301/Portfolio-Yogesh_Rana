@@ -44,6 +44,16 @@ jobs:
         env:
           NEXT_PUBLIC_GITHUB_TOKEN: ${{ secrets.NEXT_PUBLIC_GITHUB_TOKEN }}
 
+      - name: Fix paths for GitHub Pages project site
+        run: |
+          # GitHub Pages serves project sites from /repo-name/
+          # But Next.js export with basePath puts everything at root
+          # We need to ensure assets are accessible at the basePath
+          mkdir -p out-final/Portfolio-Yogesh_Rana
+          cp -r out/* out-final/Portfolio-Yogesh_Rana/
+          rm -rf out
+          mv out-final out
+
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
 

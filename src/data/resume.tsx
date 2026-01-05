@@ -17,7 +17,7 @@ export const DATA = {
     "A 3rd Year Computer Science student based in Chandigarh, India, who loves building clean, minimal software that actually helps people. I’ve shipped work trusted by teams across major open-source communities.",
   summary:
     "Yogesh is a Computer Science engineer based in Chandigarh. From an early age, he was fascinated by technology, and His favorite pastime was prying tech products, which he loves to do until the present days. For him, few things are more pleasuring than seeing his ideas become functional code and enter people's lives, and help people. It’s his way of shaping the future. He is captivated by the elegance of logic and its structures, the fusion of algorithms and creativity, and the endless possibilities within each line of code. He has always been driven by curiosity, eager to explore the world and immerse himself in different languages and cultures. His journey led him to study Computer Science at PEC Chandigarh, where he hones his skills and deepens his understanding of creating impactful software solutions. Since 2023, Yogesh has been living in Chandigarh, INDIA, embracing a new environment that helps him expand his cultural horizons. He spends his time immersed in coding, continuously learning and refining the skills required to excel in software development.",
-  avatarUrl: "/yogesh.png",
+  avatarUrl: "yogesh.png",
 
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -87,7 +87,7 @@ export const DATA = {
       href: "https://www.pec.ac.in",
       degree:
         "Bachelor of Technology in Computing Science with Specialization in Data Science Engineering \nCGPA: 8.64/10 (Till 6th Semester)",
-      logoUrl: "/pec.png",
+      logoUrl: "pec.png",
       start: "2023",
       end: "2027",
     },
@@ -95,7 +95,7 @@ export const DATA = {
       school: "Karnal International School, Haryana",
       href: "https://karnalinternationalschool.edu.in",
       degree: "12th Grade CBSE\nScored 94.4% in PCM with Computer Science",
-      logoUrl: "/karnal-international-school.png",
+      logoUrl: "karnal-international-school.png",
       start: "2021",
       end: "2022",
     },
@@ -103,7 +103,7 @@ export const DATA = {
       school: "Dyal Singh Public School, Karnal",
       href: "https://www.dsps7karnal.com/",
       degree: "10th Grade CBSE\nScored 97.2% Overall",
-      logoUrl: "/dyal-singh-public-school.jpeg",
+      logoUrl: "dyal-singh-public-school.jpeg",
       start: "2019",
       end: "2020",
     },
@@ -129,7 +129,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/chefsshell.png",
+      image: "chefsshell.png",
       video: "",
     },
     {
@@ -147,7 +147,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/aws-ebs.png",
+      image: "aws-ebs.png",
       video: "",
     },
     {
@@ -176,7 +176,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/eventhive.png",
+      image: "eventhive.png",
       video: "",
     },
     {

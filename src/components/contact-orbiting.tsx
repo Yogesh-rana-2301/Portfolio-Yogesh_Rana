@@ -76,16 +76,22 @@ export const ContactOrbiting = ({ delay = 0 }: ContactOrbitingProps) => {
         {/* Orbiting Circles */}
         <motion.div
           variants={orbitingVariants}
-          className="relative overflow-hidden h-[500px] w-full flex items-center justify-center"
+          className="relative h-[500px] w-full flex items-center justify-center"
         >
           {/* Inner orbit - Email icons */}
           <OrbitingCircles radius={80} duration={30}></OrbitingCircles>
 
           {/* Outer orbit - Social icons */}
           <OrbitingCircles radius={140} reverse duration={20}>
-            <Linkedin className="size-8 text-blue-700" />
-            <Mail className="size-8 text-blue-600" />
-            <Github className="size-8 text-gray-700 dark:text-gray-300" />
+            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-background border shadow-md">
+              <Linkedin className="size-6 text-blue-700" />
+            </div>
+            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-background border shadow-md">
+              <Mail className="size-6 text-blue-600" />
+            </div>
+            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-background border shadow-md">
+              <Github className="size-6 text-gray-700 dark:text-gray-300" />
+            </div>
           </OrbitingCircles>
 
           {/* Center content - clickable links */}

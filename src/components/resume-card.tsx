@@ -3,7 +3,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader } from "@/components/ui/card";
-import { cn, getAssetPath } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
@@ -65,11 +65,7 @@ export const TimelineItem = ({
       {/* Timeline dot with logo */}
       <div className="absolute left-0 top-0 w-8 h-8 sm:w-12 sm:h-12 rounded-full border-2 border-background shadow-lg bg-background flex items-center justify-center">
         <Avatar className="size-6 sm:size-10 border">
-          <AvatarImage
-            src={getAssetPath(logoUrl)}
-            alt={altText}
-            className="object-contain"
-          />
+          <AvatarImage src={logoUrl} alt={altText} className="object-contain" />
           <AvatarFallback className="text-xs">{altText[0]}</AvatarFallback>
         </Avatar>
       </div>
@@ -193,7 +189,7 @@ export const ResumeCard = ({
         <div className="flex-none p-content-md">
           <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
             <AvatarImage
-              src={getAssetPath(logoUrl)}
+              src={logoUrl}
               alt={altText}
               className="object-contain"
             />

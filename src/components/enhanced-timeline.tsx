@@ -5,7 +5,6 @@ import { motion, useInView } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import Image from "next/image";
-import { getAssetPath } from "@/lib/utils";
 
 interface TimelineItem {
   logoUrl: string;
@@ -88,7 +87,7 @@ export const EnhancedTimeline = ({
             <div className="relative z-10 flex-shrink-0">
               <div className="w-8 h-8 rounded-full bg-background border border-primary/30 flex items-center justify-center shadow-sm">
                 <Image
-                  src={getAssetPath(item.logoUrl)}
+                  src={item.logoUrl}
                   alt={item.altText}
                   width={20}
                   height={20}

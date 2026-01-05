@@ -5,12 +5,24 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function getBasePath() {
-  return process.env.NEXT_PUBLIC_BASE_PATH || "";
-}
-
 export function getAssetPath(path: string) {
-  const basePath = getBasePath();
+  // For client-side: check if we're on GitHub Pages
+  if (typeof window !== "undefined") {
+    const hostname = window.location.hostname;
+    const pathname = window.location.pathname;
+
+    // If on GitHub Pages user site (username.github.io/repo-name)
+    if (
+      hostname.includes("github.io") &&
+      !pathname.startsWith("/Portfolio-Yogesh_Rana")
+    ) {
+      return `/Portfolio-Yogesh_Rana${path}`;
+    }
+  }
+
+  // For server-side: use environment variable (set during build)
+  const basePath =
+    process.env.GITHUB_ACTIONS === "true" ? "/Portfolio-Yogesh_Rana" : "";
   return `${basePath}${path}`;
 }
 

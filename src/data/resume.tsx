@@ -21,9 +21,10 @@ export const DATA = {
 
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "/projects", icon: SparklesIcon, label: "Projects" },
     { href: "/blog", icon: CodeIcon, label: "Blog" },
     /*{ href: "/showcase", icon: PenBoxIcon, label: "Showcase" },*/
-    { href: "/projects", icon: SparklesIcon, label: "Projects" },
+
     { href: "/pics", icon: NotebookIcon, label: "Pics" },
   ],
   contact: {
@@ -106,6 +107,65 @@ export const DATA = {
       logoUrl: "/dyal-singh-public-school.jpeg",
       start: "2019",
       end: "2020",
+    },
+  ],
+  certifications: [
+    {
+      name: "Oracle Cloud Infrastructure 2025 Certified Architect Associate",
+      issuer: "Oracle",
+      href: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=3D96E0CAC41234EA23004FDD0C77705DEB55DFA07014CF941B7C9F86B7FA1BD5",
+      logoUrl: "/oracle.png",
+      date: "Oct 2025",
+    },
+    {
+      name: "Oracle Cloud Infrastructure 2025 Certified Foundations Associate",
+      issuer: "Oracle",
+      href: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=9152D06587AF7289853080FA5C849B134CA06459CD31CA6CAE0E1B0A32720A0B",
+      logoUrl: "/oracle.png",
+      date: "Oct 2025",
+    },
+    {
+      name: "Google Level 3: Developer Essentials",
+      issuer: "Google Cloud Skills Boost",
+      href: "https://www.cloudskillsboost.google/public_profiles/9bc42b14-d00f-4d70-824d-27b51046acea/badges/18667047",
+      logoUrl: "/gcsb.png",
+      date: "Sep 2025",
+    },
+    {
+      name: "Improving Communication Skills",
+      issuer: "University of Pennsylvania",
+      href: "https://www.coursera.org/account/accomplishments/records/0OXFMUCQQLSD",
+      logoUrl: "/penn.png",
+      date: "Oct 2025",
+    },
+
+    {
+      name: "Data Structure Problem Solving",
+      issuer: "Hackerrank",
+      href: "https://www.hackerrank.com/certificates/fff75ae52c92",
+      logoUrl: "/hackerrank.png",
+      date: "Sep 2025",
+    },
+    {
+      name: "Rest API (Intermediate)",
+      issuer: "Hackerrank",
+      href: "https://www.hackerrank.com/certificates/62d58e4209b8",
+      logoUrl: "/hackerrank.png",
+      date: "Sep 2025",
+    },
+    {
+      name: "C++ Programming - Beginner to Advance",
+      issuer: "Udemy",
+      href: "https://www.udemy.com/certificate/UC-e11162b5-6a08-4ef7-ab87-51098cbc22e0/",
+      logoUrl: "/udemy.png",
+      date: "Aug 2025",
+    },
+    {
+      name: "Postman API Student Expert",
+      issuer: "Postman",
+      href: "https://api.badgr.io/public/assertions/VJozhiVJQrOZk2nZpAlBuw",
+      logoUrl: "/postman.png",
+      date: "Aug 2025",
     },
   ],
   projects: [

@@ -106,32 +106,36 @@ export default function Page() {
           <div className="space-y-content-sm">
             <BlurFade delay={BLUR_FADE_DELAY * 11}>
               <p className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-                Yogesh is a Computer Science engineer based in Chandigarh. From
-                an early age, he was fascinated by technology, and His favorite
-                pastime was prying tech products, which he loves to do until the
-                present days.
+                Hey! I’m a Computer Science engineering student living in
+                Chandigarh. I’m currently studying at PEC Chandigarh, pursuing
+                my bachelor’s degree from 2023 to 2027. I mainly focus on
+                backend development and DevOps, and I occasionally work on
+                frontend as well.
               </p>
             </BlurFade>
             <BlurFade delay={BLUR_FADE_DELAY * 12}>
               <p className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-                He has always been driven by curiosity, eager to explore the
-                world and immerse himself in different languages and cultures.
+                I have worked on several projects, both personal and
+                collaborative, that demonstrate my skills and experience in
+                software development. Feel free to explore my portfolio to see
+                some of my work.
               </p>
             </BlurFade>
             <BlurFade delay={BLUR_FADE_DELAY * 13}>
               <p className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-                His journey led him to study Computer Science at PEC Chandigarh,
-                where he hones his skills and deepens his understanding of
-                creating impactful software solutions.
+                I am currently open to internship opportunities where I can
+                apply my skills and contribute to meaningful projects. If you
+                have an opportunity that aligns with my expertise, please feel
+                free to reach out!
               </p>
             </BlurFade>
             <BlurFade delay={BLUR_FADE_DELAY * 14}>
               <p className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-                Since 2023, Yogesh has been living in Chandigarh, India,
-                embracing a new environment that helps him expand his cultural
-                horizons. He spends his time immersed in coding, continuously
-                learning and refining the skills required to excel in software
-                development.
+                Right now, I am learning Data Structures and Algorithms to
+                enhance my problem-solving skills and improve my coding
+                efficiency. I am also focusing on System Design to better
+                understand how to architect scalable and efficient software
+                systems.
               </p>
             </BlurFade>
             <BlurFade delay={BLUR_FADE_DELAY * 15}>
@@ -252,9 +256,36 @@ export default function Page() {
           delay={BLUR_FADE_DELAY * 24}
         />
       </section>
+      <section id="certifications" className="mb-section-lg">
+        <div className="space-y-8">
+          <BlurFade delay={BLUR_FADE_DELAY * 25}>
+            <h2 className="text-xl font-bold">Certifications</h2>
+          </BlurFade>
+          <div className="space-y-0">
+            {DATA.certifications.map((certification, id) => (
+              <BlurFade
+                key={certification.name}
+                delay={BLUR_FADE_DELAY * 26 + id * 0.05}
+              >
+                <div className="[&_>_a_>_div]:border-0 [&_>_a_>_div]:p-0 [&_>_a_>_div_>_div]:p-1.5 [&_>_a_>_div_>_div_>_div]:p-1.5">
+                  <ResumeCard
+                    key={certification.name}
+                    href={certification.href}
+                    logoUrl={certification.logoUrl}
+                    altText={certification.name}
+                    title={certification.name}
+                    subtitle={certification.issuer}
+                    period={certification.date}
+                  />
+                </div>
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
       <section id="books" className="mb-section-lg">
         <div className="space-y-content-lg">
-          <BlurFade delay={BLUR_FADE_DELAY * 25}>
+          <BlurFade delay={BLUR_FADE_DELAY * 27}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
@@ -267,11 +298,11 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 26}>
+          <BlurFade delay={BLUR_FADE_DELAY * 28}>
             <div className="space-y-content-lg">
               {DATA.books.map((themeGroup, themeId) => (
                 <div key={themeGroup.theme} className="space-y-content-sm">
-                  <BlurFade delay={BLUR_FADE_DELAY * 27 + themeId * 0.1}>
+                  <BlurFade delay={BLUR_FADE_DELAY * 29 + themeId * 0.1}>
                     <h3 className="text-lg font-semibold text-muted-foreground">
                       {themeGroup.theme}
                     </h3>

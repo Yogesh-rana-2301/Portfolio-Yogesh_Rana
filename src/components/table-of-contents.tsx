@@ -8,12 +8,11 @@ import { ChevronRight, ChevronDown } from "lucide-react";
 // Define the sections of your page
 const DEFAULT_SECTIONS = [
   { id: "hero", label: "Home" },
-  { id: "chefsshell", label: "Chefs Shell" },
   { id: "about", label: "About" },
-  { id: "work", label: "Work" },
   { id: "education", label: "Education" },
   { id: "projects", label: "Projects" },
-  { id: "books", label: "Books" },
+  { id: "certifications", label: "Certifications" },
+  { id: "books", label: "Interests" },
   { id: "chandigarh", label: "Chandigarh" },
   { id: "world", label: "World" },
   { id: "contact", label: "Contact" },

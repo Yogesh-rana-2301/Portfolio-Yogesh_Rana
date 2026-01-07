@@ -54,7 +54,7 @@ const ALL_PROJECTS = [
   {
     title: "EventHive",
     href: "https://github.com/Yogesh-rana-2301/EventHive",
-    dates: "2025",
+    dates: "2025 Oct - 2025 Dec",
     active: true,
     description:
       "EventHive is the first-of-its-kind platform that combines interactive map-based event discovery with real-time community chat, designed specifically for India. We're building bridges between local communities and creating connections across the nation through immersive event experiences.",
@@ -95,6 +95,75 @@ const ALL_PROJECTS = [
       },
     ],
     image: "/securecloudx.png",
+    video: "",
+  },
+  {
+    title: "Sleep Stage Analysis (College Project)",
+    href: "https://github.com/Yogesh-rana-2301/sleep-stage-analysis",
+    dates: "2025 Apr - 2025 Aug",
+    active: true,
+    description:
+      "This project analyzes EEG data from 10 subjects—including 5 normal, 3 insomniacs, and 2 narcoleptic—sourced from the CAP Sleep Database. We focus on extracting, visualizing, and comparing sleep stage patterns using EEG signal processing and various analysis techniques.",
+    technologies: ["Python", "Numpy", "Pandas", "Matplotlib", "SciPy"],
+    links: [
+      {
+        type: "Source",
+        href: "https://github.com/Yogesh-rana-2301/sleep-stage-analysis",
+        icon: <Icons.github className="size-3" />,
+      },
+      {
+        type: "Demo",
+        href: "https://github.com/Yogesh-rana-2301/sleep-stage-analysis",
+        icon: <Icons.globe className="size-3" />,
+      },
+    ],
+    image: "/sleep-stage-analysis.png",
+    video: "",
+  },
+  {
+    title: "Reel-fling-game",
+    href: "https://github.com/Yogesh-rana-2301/reel_fling_game",
+    dates: "2025 Feb - 2025 Apr",
+    active: true,
+    description:
+      "Reel Fling is an interactive movie guessing game built with Next.js, React, Tailwind CSS, and Supabase.",
+    technologies: ["TypeScript", "React", "Tailwind CSS", "Supabase"],
+    links: [
+      {
+        type: "Source",
+        href: "https://github.com/Yogesh-rana-2301/reel_fling_game",
+        icon: <Icons.github className="size-3" />,
+      },
+      {
+        type: "Demo",
+        href: "https://reel-fling-game.vercel.app",
+        icon: <Icons.globe className="size-3" />,
+      },
+    ],
+    image: "/reel-fling-game.png",
+    video: "",
+  },
+  {
+    title: "Pig-game",
+    href: "https://github.com/Yogesh-rana-2301/PiG-Game",
+    dates: "2024 Dec - 2024 Dec",
+    active: true,
+    description:
+      "A two-player dice game where players take turns rolling and holding points. First to reach the 100 points wins! Built with HTML, CSS, and JavaScript.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    links: [
+      {
+        type: "Source",
+        href: "https://github.com/Yogesh-rana-2301/PiG-Game",
+        icon: <Icons.github className="size-3" />,
+      },
+      {
+        type: "Demo",
+        href: "https://pig-game-sigma-one.vercel.app/",
+        icon: <Icons.globe className="size-3" />,
+      },
+    ],
+    image: "/pig-game.png",
     video: "",
   },
 ];

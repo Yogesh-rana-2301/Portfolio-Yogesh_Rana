@@ -47,26 +47,33 @@ export default function Navbar() {
         <Separator orientation="vertical" className="h-full" />
         {Object.entries(DATA.contact.social)
           .filter(([_, social]) => social.navbar)
-          .map(([name, social]) => (
-            <DockIcon key={name}>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Link
-                    href={social.url}
-                    className={cn(
-                      buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12"
-                    )}
-                  >
-                    <social.icon className="size-4" />
-                  </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>{name}</p>
-                </TooltipContent>
-              </Tooltip>
-            </DockIcon>
-          ))}
+          .map(([name, social]) => {
+            // Hide X and YouTube on mobile (show only on md and up)
+            const hideOnMobile = name === "X" || name === "Youtube";
+            return (
+              <DockIcon
+                key={name}
+                className={hideOnMobile ? "hidden md:flex" : ""}
+              >
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Link
+                      href={social.url}
+                      className={cn(
+                        buttonVariants({ variant: "ghost", size: "icon" }),
+                        "size-12"
+                      )}
+                    >
+                      <social.icon className="size-4" />
+                    </Link>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>{name}</p>
+                  </TooltipContent>
+                </Tooltip>
+              </DockIcon>
+            );
+          })}
         <Separator orientation="vertical" className="h-full py-2" />
         <DockIcon>
           <Tooltip>

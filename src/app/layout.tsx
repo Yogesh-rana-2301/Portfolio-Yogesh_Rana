@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     images: [`${DATA.url}/yogesh.png`],
   },
   verification: {
-    google: "",
+    google: "44VpQA1kxe8BBeZEaNfNQ8lFhy3hma6HalDROK5IisQ",
     yandex: "",
   },
   alternates: {

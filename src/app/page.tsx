@@ -64,10 +64,54 @@ import { DATA } from "@/data/resume";
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: DATA.name,
+    url: DATA.url,
+    image: `${DATA.url}/yogesh.png`,
+    jobTitle: "Software Engineer",
+    description: DATA.description,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Chandigarh",
+      addressCountry: "India",
+    },
+    alumniOf: {
+      "@type": "EducationalOrganization",
+      name: "Punjab Engineering College",
+      url: "https://www.pec.ac.in",
+    },
+    email: DATA.contact.email,
+    telephone: DATA.contact.tel,
+    sameAs: [
+      DATA.contact.social.GitHub.url,
+      DATA.contact.social.LinkedIn.url,
+      DATA.contact.social.X.url,
+      DATA.contact.social.Youtube.url,
+    ],
+    knowsAbout: [
+      "Software Engineering",
+      "Backend Development",
+      "Full Stack Development",
+      "Distributed Systems",
+      "Web Development",
+      "Python",
+      "JavaScript",
+      "React",
+      "Node.js",
+    ],
+  };
+
   return (
-    <main className="flex flex-col min-h-[100dvh] py-section-md">
-      <TableOfContents />
-      <section id="hero" className="mb-section-lg">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <main className="flex flex-col min-h-[100dvh] py-section-md">
+        <TableOfContents />
+        <section id="hero" className="mb-section-lg">
         <div className="w-full space-y-content-lg">
           <div className="gap-2 flex justify-between items-center">
             <div className="flex-col flex flex-1 space-y-1.5">
@@ -366,5 +410,6 @@ export default function Page() {
       </section>
       <ContactOrbiting delay={BLUR_FADE_DELAY * 33} />
     </main>
+    </>
   );
 }

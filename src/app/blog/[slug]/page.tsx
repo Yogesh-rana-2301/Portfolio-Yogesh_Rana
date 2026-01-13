@@ -30,15 +30,22 @@ export async function generateMetadata({
   return {
     title,
     description,
+    authors: [{ name: DATA.name, url: DATA.url }],
+    creator: DATA.name,
+    publisher: DATA.name,
     openGraph: {
       title,
       description,
       type: "article",
       publishedTime,
       url: `${DATA.url}/blog/${post.slug}`,
+      authors: [DATA.name],
       images: [
         {
           url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: title,
         },
       ],
     },
@@ -46,6 +53,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title,
       description,
+      creator: "@Y_Rana2004",
       images: [ogImage],
     },
   };

@@ -135,7 +135,12 @@ export default function Page() {
             </div>
             <BlurFade delay={BLUR_FADE_DELAY * 3}>
               <Avatar className="size-40 border">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                <AvatarImage 
+                  alt="Yogesh Rana - Software Engineer and Backend Developer from Chandigarh, India" 
+                  src={DATA.avatarUrl}
+                  loading="eager"
+                  fetchPriority="high"
+                />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>

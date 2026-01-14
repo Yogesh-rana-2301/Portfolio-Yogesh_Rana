@@ -1,6 +1,7 @@
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { PersonSchema, WebSiteSchema, ProfilePageSchema } from "@/components/structured-data";
 
 import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
@@ -46,16 +47,18 @@ export const metadata: Metadata = {
     url: DATA.url,
     siteName: `${DATA.name} - Portfolio`,
     locale: "en_US",
-    type: "website",
+    type: "profile",
     images: [
       {
         url: `${DATA.url}/yogesh.png`,
         width: 1200,
         height: 630,
-        alt: "Yogesh Rana - Software Engineer Portfolio",
+        alt: "Yogesh Rana - Software Engineer Portfolio | Backend Developer | Full Stack Developer based in Chandigarh, India",
+        type: "image/png",
       },
     ],
   },
+  category: "Technology",
   robots: {
     index: true,
     follow: true,
@@ -90,6 +93,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <PersonSchema />
+        <WebSiteSchema />
+        <ProfilePageSchema />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",

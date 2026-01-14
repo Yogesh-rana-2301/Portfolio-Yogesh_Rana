@@ -2,8 +2,20 @@
 User-agent: *
 Allow: /
 
+# Enhanced crawling for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Allow Google Image Bot - Critical for image SEO
+User-agent: Googlebot-Image
+Allow: /
+
 # Sitemap location
 Sitemap: https://yogeshrana.me/sitemap.xml
+Sitemap: https://yogeshrana.me/image-sitemap.xml
 
-# Crawl delay (optional)
-Crawl-delay: 10
+# Host
+Host: https://yogeshrana.me
+
+# Crawl delay (optional) - Removed for faster indexing
